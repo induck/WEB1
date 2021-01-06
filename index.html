@@ -2,7 +2,7 @@
 
 <!doctype html>
 <head>
-<title>BUILD UP-Welcome</title>
+<title>BUILD UP-추월차선</title>
 <meta charset="utf-8">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B53MR8SXP"></script>
@@ -13,7 +13,6 @@
 
   gtag('config', 'G-6B53MR8SXP');
 </script>
-
 
 <style>
 body{
@@ -50,7 +49,6 @@ ol{
 h3{
   margin:0;
 }
-
 #grid{
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -71,42 +69,65 @@ border-bottom:none;
   </style>
 </head>
 <body>
+
+
+  <div1>
+      <input id="night_day" type="button" name="" value="night" onclick="
+        if (document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        }else{
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night';
+        }
+        ">
+  </div1>
 <h1><a href="index.html">BUILD UP</a></h1>
   <div id="grid">
 <ol>
-  <h3><a href="1.html">Fast Lane</a></h3>
-  <h3><a href="2.html">Slow Lane</a></h3>
-  <h3><a href="3.html">Sidewalk</a></h3>
+  <h3><a href="1.html">Calculator</a></h3>
+  <br>
+  <h3><a href="2.html">Feedback
+  or Enquiry</a></h3>
+  <br>
+  <h3><a href="3.html">Community</a></h3>
     </ol>
 <div>
-
+<h2>About the website</h2>
 
 
 
 <p>
 
-    <h4>당신의 성향(투자성향, 돈에 대한 가치관)에 따라 미래의 자산을
-  예측하는 시스템입니다. 이 시스템에서는 3가의 유형에 맞추어 예측하는 시스템입니다.
-  만약 당신의 유형을 모르겠다면 테스트해보는 것을 추천합니다.
+<h4>  당신의 성향(투자성향, 돈에 대한 가치관)에 따라 미래의 자산을
+예측하는 시스템입니다. 이 시스템에서는 3가의 유형에 맞추어 예측하는 시스템입니다.
+만약 당신의 유형을 모르겠다면 테스트해보는 것을 추천합니다.</h4>
+
     </p>
   </div>
 </div>
 
 
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ff2cf78df060f156a942334/1er67ks6s';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-vkxfz0pxsm.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
-<!--End of Tawk.to Script-->
-
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </body>
