@@ -1,7 +1,8 @@
 
+
 <!doctype html>
 <head>
-<title>BUILD UP-추월차선</title>
+<title>BUILD UP-Calculator</title>
 <meta charset="utf-8">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B53MR8SXP"></script>
@@ -24,7 +25,9 @@ a {
 }
 
 
-
+h2{
+  font-size:35px;
+}
 
 h1{
 font-size:45px;
@@ -47,6 +50,7 @@ ol{
 
 h3{
   margin:0;
+  font-size:20px;
 }
 #grid{
   display: grid;
@@ -68,15 +72,33 @@ border-bottom:none;
   </style>
 </head>
 <body>
+
+
+  <div1>
+      <input id="night_day" type="button" name="" value="night" onclick="
+        if (document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        }else{
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night';
+        }
+        ">
+  </div1>
 <h1><a href="index.html">BUILD UP</a></h1>
   <div id="grid">
 <ol>
-  <h3><a href="1.html">Fast Lane</a></h3>
-  <h3><a href="2.html">Slow Lane</a></h3>
-  <h3><a href="3.html">Sidewalk</a></h3>
+  <h3><a href="1.html">Calculator</a></h3>
+  <br>
+  <h3><a href="2.html">Feedback
+  or Enquiry</a></h3>
+  <br>
+  <h3><a href="3.html">Community</a></h3>
     </ol>
 <div>
-<h2>Fast Lane Simulation</h2>
+<h2>Calculator-Your assets after X years</h2>
 
 
 
